@@ -1,5 +1,5 @@
 sofo
 ====
 
-Statust:  Researching Development not yet started.
+Status:  Researching Development not yet started.
 
