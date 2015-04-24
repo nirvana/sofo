@@ -16,7 +16,7 @@ REST as well
 
 ## CHALLENGE:
 
-### Create an elixir library that can be published to hex.pm
+ Create an elixir library that can be published to hex.pm
 
 #### Needed functionality-
 
@@ -27,7 +27,9 @@ REST as well
   - The elixir side will be maps, the data pushed to the database will be JSON.  This is a JSON database
   - Have some way to support multiple "databases" (what sync_gateway calls them, couchbase calls them buckets) as we will be segregating some data this way. So the APIs can't assum the db name.
 -- Tests that test all of this. 
+
 #### Here's some docs: 
+
   - CouchBase Sync Gateway API Reference: http://developer.couchbase.com/mobile/develop/references/sync-gateway/index.html
   - Sync Gateway general Guide:http://developer.couchbase.com/mobile/develop/guides/sync-gateway/index.html
 Here's the dependencies you'll want to use (these are vetted so please don't roll your own or go with something else without talking about it first.)
@@ -36,8 +38,10 @@ Here's the dependencies you'll want to use (these are vetted so please don't rol
   - You will need to support various types of data coming from the database... eg: attachments as well as json documents (I think, see how sync_gateway handles this) Here's an example from an existing library: https://github.com/nirvana/couchie/blob/master/lib/transcoder.ex
   - Elixir testing:  http://elixir-lang.org/getting-started/mix-otp/docs-tests-and-pipelines.html
   - Check out github.com/nirvana/couchie for a previous API I wrote to access couchbase (but using a different SDK that's not appropriate for this project.)
-  - 
+  
+
 ####  You'll need to--
+
 - Get couchbase running on your machine
 - Get sync_gateway for your machine
 - Set up a bucket for the gateway
